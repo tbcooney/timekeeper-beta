@@ -1,5 +1,5 @@
 class DocumentsController < ApplicationController
-  before_action :find_document, only: [:show, :edit, :update, :destroy]
+  before_action :find_document, only: [:destroy]
 
   def index
     @documents = Document.where(user_id: current_user)
