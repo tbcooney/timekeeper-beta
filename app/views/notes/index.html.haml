@@ -1,5 +1,14 @@
+/ #side_bar
+/   %ul.navigation
+/     %li= link_to 'Member Approval'
+/     %li= link_to 'Pages'
+/     %li= link_to 'Reports'
 .wrapper_with_padding
   #notes.clearfix
+    .tab-name Notes
+    %button= link_to "New Note", new_note_path
+    %br/
+    %br/
     - unless @notes.blank?
       - @notes.each do |note|
         %a{ href: (url_for [note])}
@@ -10,3 +19,4 @@
       %h2 Add a Note
       %p It appears you haven't created any notes yet... Lets fix that. Why don't you go ahead and create a new note.
       %button= link_to "New Note", new_note_path
+
