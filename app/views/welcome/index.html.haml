@@ -1,34 +1,58 @@
 #banner
   .banner_content
-    %h1 NoteNote
-    %p Your online notebook. Never forget an idea again.
+    %h1 TimeKeeper
+    %p Your online group note keeper. Never forget an idea again.
+
     %button= link_to "Sign Up", new_user_registration_path
-#testimonial
+
+#faq
   .wrapper
-    %p.quote "The greatest notebook application. Period."
-    %p.name - Mackenzie Child
+    %h2 one workspace
+    %h4  Imagine all your team communication in one place. That's TimeKeeper.
+    .wrapper
+      .faq
+        %i.fa.fa-clock-o
+        %h3 WHY TIMEKEEPER
+        %p TimeKeeper displays your work in a clean, easy-to-browse dashboard. Easily gather everything that matters to keep your group on the same page.
+      .faq
+        %i.fa.fa-dropbox
+        %h3 SHAREBOX
+        %p TimeKeeper works well on mobile and showcases your shots front and center. Try the demo on your smartphone to see the mobile.
+      .faq
+        %i.fa.fa-bell
+        %h3 NOTIFICATIONS
+        %p TimeKeeper maximizes the focus on your work. Configurable notifications for desktop, mobile push and email keep you as informed as you’d like.
+      .faq
+        %i.fa.fa-cog
+        %h3 CUSTOMIZABLE
+        %p TimeKeeper keeps the interface minimal, it's simple to find what you're looking for. Forget wasting hours managing notes.
+
 #callouts
   .callout_inner
     .wrapper
       .callout
-        %i.fa.fa-pencil
-        %h2 Notes
-        %p Viral Echo Park Intelligentsia tattooed, craft beer organic authentic polaroid tousled mlkshk church-key. Fanny pack Banksy vegan  authentic Helvetica.
-
+        %h2 timekeeper
+        %h3 Free
+        %button= "Sign Up"
+        %h4 Organize your group projects.
+        %p Limited ShareBox storage<br>Keep everything together <br>Workspace for a single project
       .callout
-        %i.fa.fa-rocket
-        %h2 Notes
-        %p Viral Echo Park Intelligentsia tattooed, craft beer organic authentic polaroid tousled mlkshk church-key. Fanny pack Banksy vegan  authentic Helvetica.
-
+        %h2 timekeeper
+        %h3 Premium
+        %button= "Go Premium"
+        %h4 Upgrade to work smarter.
+        %p Educational pricing<br>Sync across all devices<br>Workspace for daily projects
       .callout
-        %i.fa.fa-bolt
-        %h2 Notes
-        %p Viral Echo Park Intelligentsia tattooed, craft beer organic authentic polaroid tousled mlkshk church-key. Fanny pack Banksy vegan  authentic Helvetica.
+        %h2 timekeeper
+        %h3 Enterprise
+        %button= "Get Started"
+        %h4 Get TimeKeeper for the team.
+        %p All of Evernote Free <br>Offline access to projects<br>Centralized administration
+
 #bottom_cta
   .wrapper
-    %h2 For Realz!
-    %p I want you to sign up... If you don’t. I will find you!
-    %button= link_to "Click Meee!!!", new_user_registration_path
+    %h2 Forget wasting hours managing notes
+    %button= link_to "Get Started Now", new_user_registration_path
 
 %footer
-  %p &copy; Mackenzie Child
+  %p &copy; Timekeeper
