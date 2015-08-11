@@ -69,7 +69,7 @@
   }
   i {
     font-size: 2.5rem;
-    color: $green;
+    color: $purple;
   }
 }
 
@@ -92,7 +92,7 @@
     float: left;
     i {
       font-size: 2.5rem;
-      color: $green;
+      color: $purple;
     }
     h2 {
       @include bold_font;
