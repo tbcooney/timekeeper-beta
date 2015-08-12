@@ -1,6 +1,11 @@
 - if !flash[:notice].blank?
   .alert.alert-info
     = flash[:notice]
+#sidebar-wrapper
+  %ul.sidebar-nav
+    %li= link_to 'Notes', notes_path, class: "sidebar-brand"
+    %li= link_to 'Documents', documents_path, class: "sidebar-brand"
+    %li= link_to 'Settings', edit_user_registration_path, class: "sidebar-brand"
 .wrapper_with_padding
   .tab-name Documents
   %button= link_to "New Document", new_document_path
